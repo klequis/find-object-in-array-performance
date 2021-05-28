@@ -1,5 +1,15 @@
 # find-object-in-array-performance
 
+## Performance
+
+**3,000 objects**
+
+Tests (ms) : (66, 68, 67)
+
+**100,000 objects**
+
+## Code
+
 ```js
 import shortid from 'shortid'
 
@@ -38,6 +48,7 @@ const combinedData = regionsWithSvg.map((x) => {
   x.eduPercent = eduObj.eduPercent
   return x
 })
+
 const end = new Date().getTime()
 
 // console.log(combinedData)
